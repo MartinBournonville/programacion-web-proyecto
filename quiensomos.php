@@ -25,20 +25,20 @@
 		<nav class="navbar navbar-inverse" role="navigation" >
 		 <div class="collapse navbar-collapse navbar-ex1-collapse">
 		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Inicio</a></li>
-		      <li class="active"><a href="#">Quienes somos</a></li>
+		      <li class="active"><a href=index.php>Inicio</a></li>
+		      <li class="active"><a href=quiensomos.php>Quienes somos</a></li>
 		      <li class="dropdown active">
 		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 		          Productos <b class="caret"></b>
 		        </a>
 		        <ul class="dropdown-menu">
-		          <li><a href="#">Filtros</a></li>
-		          <li><a href="#">Aceites</a></li>
-		          <li><a href="#">Baterias</a></li>
-		          <li><a href="#">Lavadero</a></li>
+		          <li><a href=filtros.php>Filtros</a></li>
+		          <li><a href=aceites.php>Aceites</a></li>
+		          <li><a href=baterias.php>Baterias</a></li>
+		          <li><a href=lavadero.php>Lavadero</a></li>
    		        </ul>
 		      </li>
-		      <li class="active"><a href="#">Arma tu presupuesto</a></li>
+		      <li class="active"><a href=presupuesto.php>Arma tu presupuesto</a></li>
 		      <li class="active"><a href=contacto.php>Contacto</a></li>
 		    </ul>
 		  </div>
@@ -56,9 +56,9 @@
 	    <div class="container">
 			<div class="footer">
 		    	<div class="row">
-		    		<div class="col-md-4 col-md-offset-4">
+		    		<div class="col-md-6 col-md-offset-4">
 		    			<font color="white">Todos los Derechos Reservados 
-		    			@Maexe @Dcaro</font>
+		    			@MBournonville @DCaro</font>
 		    			
 		    		</div>	
 
