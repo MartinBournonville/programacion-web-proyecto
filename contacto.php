@@ -48,19 +48,11 @@
 					<table width="500px">
 						<tr>
 							<td>
-								<label for="first_name">Nombre: *</label>
+								<label for="nombre">Nombre: *</label>
 							</td>
 						<td>
-							<input type="text" name="first_name" maxlength="50" size="25">
+							<input type="text" name="nombre" maxlength="50" size="25">
 						</td>
-						</tr>
-						<tr>
-							<td valign="top">
-								<label for="last_name">Apellido: *</label>
-							</td>
-							<td>
-								<input type="text" name="last_name" maxlength="50" size="25">
-							</td>
 						</tr>
 						<tr>
 							<td>
@@ -72,18 +64,18 @@
 						</tr>
 						<tr>
 							<td>
-								<label for="telephone">Número de teléfono:</label>
+								<label for="telefono">Número de teléfono:</label>
 							</td>
 							<td>
-								<input type="text" name="telephone" maxlength="25" size="15">
+								<input type="text" name="telefono" maxlength="25" size="15">
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label for="comments">Comentarios: *</label>
+								<label for="mensaje">Comentarios: *</label>
 							</td>
 							<td>
-								<textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+								<textarea name="mensaje" maxlength="500" cols="30" rows="5"></textarea>
 							</td>
 						</tr>
 						<tr>
