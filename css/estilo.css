@@ -1,0 +1,60 @@
+
+body{
+		background: black;
+	}
+#cuerpo{
+		background-color: gray;
+		/*para fierefox*/
+		-moz-border-radius: 25px 25px 40px 40px;
+		/*para Safari y Chrome*/
+		-webkit-border-radius: 25px 25px 40px 40px;
+		/* para Opera */
+		border-radius: 25px 25px 40px 40px;
+
+
+}
+#barranav{
+			 display: block;
+ 			 margin-left: auto;
+ 			 margin-right: auto;
+		}
+#valvo{
+			width: 100px;
+			height: 100px;
+			background-image: url(../img/logovalvo.png);
+			background-repeat: no-repeat;
+    		background-size: 100% 100%;
+    		background-origin: border-box;
+	  }
+#famat{
+			width: 150px;
+			height: 50px;
+			background-image: url(../img/logofamat.png);
+			background-repeat: no-repeat;
+    		background-size: 100% 100%;
+    		background-origin: border-box;
+    		
+	  }
+#selenia{
+			width: 100px;
+			height: 100px;
+			background-image: url(../img/logoselenia.png);
+			background-repeat: no-repeat;
+    		background-size: 100% 100%;
+    		background-origin: border-box;
+	  }
+#fullcar{
+			width: 132px;
+			height: 80px;
+			background-image: url(../img/logofull.png);
+			background-repeat: no-repeat;
+    		background-size: 100% 100%;
+    		background-origin: border-box;
+	  }
+#head{
+			width: 1170px;
+			height: 200px;
+			background-image: url(../img/head.png);
+			background-repeat: no-repeat;
+    		background-size: 100% 100%;
+	  }	  
