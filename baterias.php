@@ -1,3 +1,6 @@
+<?php
+include("/php/cnn.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -45,7 +48,50 @@
 		</nav>
 		<div class="row">
 			<div class="col-md-6 col-md-offset-2">
-				
+				<?php
+				$cnn = conectar();
+				//se envia la consulta  
+				$result = mysql_query("SELECT * FROM bateria ORDER BY ID ASC", $cnn);  
+				?>  
+				<table id="tabla">
+					<thead id="thead">
+						<tr>
+							<th>
+								Descripcion
+							</th>
+							<th>
+								Marca
+							</th>
+							<th>
+								Alto
+							</th>
+							<th>
+								Ancho
+							</th>
+							<th>
+								Largo
+							</th>
+							<th>
+								Precio
+							</th>
+						</tr>
+					</thead>	
+					<tbody>
+						<?php
+							while ($row = mysql_fetch_row($result)){   
+						   echo "<tr>" 
+				           ."<td>".$row['Descripcion']."</td>" 
+				           ."<td>".$row['Marca']."</td>" 
+				           ."<td>".$row['Alto']."</td>" 
+				           ."<td>".$row['Ancho']."</td>" 
+				           ."<td>".$row['Largo']."</td>" 
+				           ."<td>".$row['Precio']."</td>"
+				           ."</tr>"; 
+				 			 } 							
+						?>
+					
+					</tbody>
+				</table>	
 			</div>
 		</div>	
 	</div>
