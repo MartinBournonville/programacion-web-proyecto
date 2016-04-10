@@ -1,3 +1,6 @@
+<?php
+include("/php/cnn.php");
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>
@@ -44,7 +47,46 @@
 		  </div>
 		</nav>
 		<div class="row">
-			<div class="col-md-6 col-md-offset-2">
+			<div class="col-md-10 col-md-offset-1">
+				<?php
+				$cnn = conectar();
+				//se envia la consulta  
+				$result = mysql_query("SELECT * FROM lavadero ORDER BY ID ASC", $cnn);  
+				?>  
+				<table>
+					<thead>
+						<tr>
+							<th>
+								Producto
+							</th>
+							<th>
+								Descripcion
+							</th>
+							<th>
+								Presentacion
+							</th>
+							<th>
+								Precio
+							</th>
+						</tr>
+					</thead>	
+					<tbody>
+						<?php
+							while ($row = mysql_fetch_row($result)){   
+						   echo "<tr>" 
+				           ."<td>".$row[1]."</td>" 
+				           ."<td>".$row[2]."</td>"
+				           ."<td>".$row[3]."</td>"
+				           ."<td>".$row[4]."</td>"; 
+				 			 } 							
+						?>
+					
+					</tbody>
+				</table>	
+				<p></p>
+				<p></p>
+				<p></p>
+				<p></p>
 				
 			</div>
 		</div>	
